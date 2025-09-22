@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&family=Oswald:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 0% 10%; /* #1a1a1a */
+    --foreground: 0 0% 100%; /* #ffffff */
+
+    --card: 240 0% 17%; /* #2c2c2c */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 240 0% 17%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 45 97% 67%; /* #fcd34d - LEGO Yellow */
+    --primary-foreground: 240 0% 10%;
+
+    --secondary: 243 79% 60%; /* #4f46e5 - Batman Blue/Purple */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 63%; /* #a0a0a0 */
+    --muted-foreground: 0 0% 100%;
+
+    --accent: 45 97% 67%; /* #fcd34d */
+    --accent-foreground: 240 0% 10%;
+    --accent-2: 243 79% 60%; /* #4f46e5 */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 0% 25%;
+    --input: 240 0% 25%;
+    --ring: 45 97% 67%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 0% 10%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 0% 17%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 240 0% 17%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 45 97% 67%;
+    --primary-foreground: 240 0% 10%;
+
+    --secondary: 243 79% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 63%;
+    --muted-foreground: 0 0% 100%;
+
+    --accent: 45 97% 67%;
+    --accent-foreground: 240 0% 10%;
+    --accent-2: 243 79% 60%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 0% 25%;
+    --input: 240 0% 25%;
+    --ring: 45 97% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: theme('fontFamily.sans');
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  }
+  .backface-hidden {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+}
