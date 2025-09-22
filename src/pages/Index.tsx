@@ -1,6 +1,7 @@
 import { InfoSection } from '@/components/plastic-pollution/InfoSection'
 import { PlasticPollutionScene } from '@/components/plastic-pollution/PlasticPollutionScene'
 import { SourcesSection } from '@/components/plastic-pollution/SourcesSection'
+import { DecompositionTable } from '@/components/decomposition-table/DecompositionTable'
 
 const content = {
   introducao: {
@@ -56,6 +57,7 @@ const Index = () => {
         <InfoSection title={content.terrestre.title} animationDirection="left">
           <p>{content.terrestre.text}</p>
         </InfoSection>
+        <DecompositionTable />
       </div>
       <SourcesSection />
     </div>
