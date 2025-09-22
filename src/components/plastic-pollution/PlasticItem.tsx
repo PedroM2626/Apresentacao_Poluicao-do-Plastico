@@ -23,11 +23,14 @@ export const PlasticItem = ({
   style,
 }: PlasticItemProps) => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
 
   return (
     <>
       <button
         onClick={() => setIsOpen(true)}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         className={cn(
           'absolute transition-transform duration-300 ease-out-quad hover:scale-110 hover:z-10 focus:outline-none focus:ring-2 focus:ring-primary rounded-full',
           className,
@@ -40,6 +43,11 @@ export const PlasticItem = ({
           alt={name}
           className="w-full h-full object-contain"
         />
+        {isHovered && (
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-full">
+            <span className="text-white text-center font-bold">Saiba mais</span>
+          </div>
+        )}
       </button>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="bg-card border-border text-foreground">

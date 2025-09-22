@@ -34,27 +34,27 @@ const plasticItemsData = [
   },
   {
     id: 'cup3',
-    name: 'Copo Plástico 3',
+    name: 'Copo Plástico',
     description:
-      'O descarte inadequado de copos plásticos contribui significativamente para a poluição do solo e da água.',
+      'Alto custo de gerenciamento de resíduos, baixa taxa de reciclagem (no Brasil, cerca de 3% para plásticos)',
     imageSrc: copoPlastico3,
     position: { top: '55%', left: '30%' },
     appearAt: 0.7,
   },
   {
     id: 'aluminum_cup',
-    name: 'Copo de Alumínio',
+    name: 'Lata de Alumínio',
     description:
-      'Embora seja reciclável, quando descartado incorretamente, o alumínio pode contaminar o solo e a água.',
+      'Apesar do corpo principal de alumínio ser 100% reciclável existe uma camada fina de resina plástica (geralmente epóxi com bisfenol A ou derivados) para evitar que o metal reaja com a bebida (principalmente refrigerantes ácidos e cerveja).resina epóxi pode liberar traços de bisfenóis (BPA, BPS, BPF), que são desreguladores endócrinos e em bebidas ácidas, quentes ou armazenadas por longos períodos, essa migração pode aumentar. Estudos apontam que mesmo em níveis baixos, a exposição crônica ao BPA está ligada a alterações hormonais, problemas metabólicos e risco aumentado de alguns tipos de câncer.  ',
     imageSrc: copoAluminio,
     position: { top: '65%', left: '75%' },
     appearAt: 0.8,
   },
   {
     id: 'yogurt',
-    name: 'Embalagem de Iogurte',
+    name: 'Embalagem',
     description:
-      'Embalagens de iogurte são difíceis de reciclar devido à mistura de materiais plásticos.',
+      'Em lixões, embalagens podem liberar corantes, metais e aditivos que lixiviam para o solo e lençóis freáticos. No mar, são uma das maiores fontes de lixo costeiro.',
     imageSrc: iogurteEmbalagem,
     position: { top: '70%', left: '5%' },
     appearAt: 0.85,
