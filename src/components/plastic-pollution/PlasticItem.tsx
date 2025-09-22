@@ -32,7 +32,7 @@ export const PlasticItem = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className={cn(
-          'absolute transition-transform duration-300 ease-out-quad hover:scale-110 hover:z-10 focus:outline-none focus:ring-2 focus:ring-primary rounded-full',
+          'absolute transition-transform duration-300 ease-out-quad hover:scale-110 hover:z-10 focus:outline-none focus:ring-2 focus:ring-primary rounded-full animate-subtle-pulse',
           className,
         )}
         style={style}

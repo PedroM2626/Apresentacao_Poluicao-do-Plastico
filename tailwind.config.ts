@@ -123,6 +123,10 @@ export default {
           from: { opacity: '0', transform: 'scale(0.95)' },
           to: { opacity: '1', transform: 'scale(1)' },
         },
+        'subtle-pulse': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.02)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -135,6 +139,7 @@ export default {
         'fade-in-left': 'fade-in-left 0.6s ease-out forwards',
         'fade-in-right': 'fade-in-right 0.6s ease-out forwards',
         'scale-in': 'scale-in 0.5s ease-out forwards',
+        'subtle-pulse': 'subtle-pulse 3s ease-in-out infinite',
       },
       transitionTimingFunction: {
         'ease-out-quad': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
