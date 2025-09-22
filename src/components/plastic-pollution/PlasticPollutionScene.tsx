@@ -20,7 +20,7 @@ const plasticItemsData = [
     description:
       'Copos plásticos, frequentemente usados por poucos minutos, persistem no ambiente por até 50 anos, liberando substâncias químicas.',
     imageSrc: copoPlastico,
-    position: { top: '40%', left: '15%' },
+    position: { top: '35%', left: '10%' },
     appearAt: 0.5,
   },
   {
@@ -29,7 +29,7 @@ const plasticItemsData = [
     description:
       'Copos plásticos são um dos principais poluentes encontrados em ambientes naturais, demorando décadas para se decompor.',
     imageSrc: copoPlastico2,
-    position: { top: '50%', left: '80%' },
+    position: { top: '45%', left: '85%' },
     appearAt: 0.6,
   },
   {
@@ -38,7 +38,7 @@ const plasticItemsData = [
     description:
       'O descarte inadequado de copos plásticos contribui significativamente para a poluição do solo e da água.',
     imageSrc: copoPlastico3,
-    position: { top: '60%', left: '40%' },
+    position: { top: '55%', left: '30%' },
     appearAt: 0.7,
   },
   {
@@ -47,7 +47,7 @@ const plasticItemsData = [
     description:
       'Embora seja reciclável, quando descartado incorretamente, o alumínio pode contaminar o solo e a água.',
     imageSrc: copoAluminio,
-    position: { top: '70%', left: '5%' },
+    position: { top: '65%', left: '75%' },
     appearAt: 0.8,
   },
   {
@@ -56,7 +56,7 @@ const plasticItemsData = [
     description:
       'Embalagens de iogurte são difíceis de reciclar devido à mistura de materiais plásticos.',
     imageSrc: iogurteEmbalagem,
-    position: { top: '85%', left: '90%' },
+    position: { top: '70%', left: '5%' },
     appearAt: 0.85,
   },
   {
@@ -65,7 +65,7 @@ const plasticItemsData = [
     description:
       'Brinquedos de borracha quando descartados incorretamente podem levar centenas de anos para se decompor.',
     imageSrc: patoBorracha,
-    position: { top: '45%', left: '65%' },
+    position: { top: '30%', left: '50%' },
     appearAt: 0.9,
   },
   {
@@ -74,7 +74,7 @@ const plasticItemsData = [
     description:
       'Sacolas plásticas são leves e facilmente transportadas pelo vento, poluindo vastas áreas.',
     imageSrc: sacoPlastico,
-    position: { top: '75%', left: '25%' },
+    position: { top: '50%', left: '60%' },
     appearAt: 0.95,
   },
   {
@@ -83,7 +83,7 @@ const plasticItemsData = [
     description:
       'Sacolas plásticas demoram cerca de 20 anos para se decompor e ameaçam a vida selvagem.',
     imageSrc: sacoSacola,
-    position: { top: '80%', left: '55%' },
+    position: { top: '60%', left: '20%' },
     appearAt: 1.0,
   },
 ]
