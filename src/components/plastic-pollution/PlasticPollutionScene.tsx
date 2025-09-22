@@ -16,18 +16,18 @@ import sacoSacola from '@/images/sacoesacolaplastica.png'
 const plasticItemsData = [
   {
     id: 'cup1',
-    name: 'Copo Plástico',
+    name: 'Copo de Isopor',
     description:
-      'Copos plásticos, frequentemente usados por poucos minutos, persistem no ambiente por até 50 anos, liberando substâncias químicas.',
+      'Estudos mostram que copos de isopor podem liberar estireno (monômero do poliestireno), especialmente em contato com líquidos quentes, gordurosos ou ácidos. O estireno é classificado pela IARC (OMS) como possivelmente carcinogênico (capaz de causar ou estimular o desenvolvimento de câncer) para humanos.',
     imageSrc: copoPlastico,
     position: { top: '35%', left: '10%' },
     appearAt: 0.5,
   },
   {
     id: 'cup2',
-    name: 'Copo Plástico 2',
+    name: 'Copo Plástico',
     description:
-      'Copos plásticos são um dos principais poluentes encontrados em ambientes naturais, demorando décadas para se decompor.',
+      'Mesmo copos de papel (“paper cups”) geralmente têm um revestimento plástico para vedação (ex: polietileno). Esse revestimento se deteriora com água quente.',
     imageSrc: copoPlastico2,
     position: { top: '45%', left: '85%' },
     appearAt: 0.6,
@@ -63,25 +63,25 @@ const plasticItemsData = [
     id: 'rubber_duck',
     name: 'Pato de Borracha',
     description:
-      'Brinquedos de borracha quando descartados incorretamente podem levar centenas de anos para se decompor.',
+      'O pato de borracha, aquele brinquedo clássico de banho, parece inofensivo...',
     imageSrc: patoBorracha,
     position: { top: '30%', left: '50%' },
     appearAt: 0.9,
   },
   {
     id: 'plastic_bag',
-    name: 'Saco Plástico',
+    name: 'Sacola Plástica',
     description:
-      'Sacolas plásticas são leves e facilmente transportadas pelo vento, poluindo vastas áreas.',
+      'Estudos de laboratório mostram que partículas liberadas por sacolas alteram propriedades do solo, como retenção de água e porosidade. Também podem interferir na germinação e crescimento de plantas: por exemplo, sementes de alface cultivadas em solos contaminados com fragmentos de sacolas apresentaram redução na taxa de germinação e menor desenvolvimento radicular.',
     imageSrc: sacoPlastico,
     position: { top: '50%', left: '60%' },
     appearAt: 0.95,
   },
   {
     id: 'plastic_bag2',
-    name: 'Sacola Plástica',
+    name: 'Embalagem de salgadinho',
     description:
-      'Sacolas plásticas demoram cerca de 20 anos para se decompor e ameaçam a vida selvagem.',
+      'Por conta da mistura de plástico + alumínio, a decomposição pode ultrapassar 400 anos. O alumínio em si é reciclável, mas como está colado ao plástico, acaba descartado.',
     imageSrc: sacoSacola,
     position: { top: '60%', left: '20%' },
     appearAt: 1.0,
