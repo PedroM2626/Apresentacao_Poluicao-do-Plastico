@@ -99,11 +99,34 @@ export const PlasticPollutionScene = () => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  const transitionProgress = vh > 0 ? scrollY / vh : 0
-  const contentY = -transitionProgress * vh
+  // Definição das fases de rolagem
+  const scrollPhase1End = 2 * vh // Fim da rolagem pelas camadas 1 e 2
+  const scrollPhase2End = 3 * vh // Fim da aparição dos itens (pausa aqui)
 
+  let contentY
+
+  if (scrollY <= scrollPhase1End) {
+    // Fase 1: Anima através das camadas 1 e 2.
+    contentY = -scrollY
+  } else if (scrollY <= scrollPhase2End) {
+    // Fase 2: Mantém na camada 3 (efeito de "trava").
+    contentY = -scrollPhase1End
+  } else {
+    // Fase 3: Retoma a rolagem para revelar o resto da página.
+    contentY = -scrollPhase1End - (scrollY - scrollPhase2End)
+  }
+
+  // Progresso para a aparição dos itens de plástico (acontece na Fase 2)
   const plasticProgress =
-    vh > 0 ? Math.max(0, Math.min(1, (scrollY - 2 * vh) / vh)) : 0
+    vh > 0
+      ? Math.max(
+          0,
+          Math.min(
+            1,
+            (scrollY - scrollPhase1End) / (scrollPhase2End - scrollPhase1End),
+          ),
+        )
+      : 0
 
   return (
     <div className="relative h-[400vh] w-full">
@@ -140,7 +163,7 @@ export const PlasticPollutionScene = () => {
               const itemAppearProgress =
                 itemAppearDenominator > 0
                   ? (plasticProgress - item.appearAt) / itemAppearDenominator
-                  : plasticProgress === 1
+                  : plasticProgress >= 1 // Garante que itens em 1.0 apareçam
                   ? 1
                   : 0
               const itemAppear = Math.max(0, itemAppearProgress)
